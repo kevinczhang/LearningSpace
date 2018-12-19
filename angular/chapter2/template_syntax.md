@@ -1,11 +1,6 @@
 # Template Syntax
 
-| Type | Property | Example |
-| :---: | :---: | :---: |
-| Property | Element Property                                   Component property                            Directive property | &lt;img \[src\]="heroImageUrl"&gt;                   &lt;app-hero-detail \[hero\]="currentHero"&gt;&lt;/app-hero-detail&gt; |
-|  |  |  |
-|  |  |  |
-|  |  |  |
+In fact, once you start data binding, you are no longer working with HTML attributes. You aren't setting attributes. You are setting the properties of DOM elements, components, and directives.
 
 
 
