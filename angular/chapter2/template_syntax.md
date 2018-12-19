@@ -2,7 +2,8 @@
 
 | Type | Property | Example |
 | :---: | :---: | :---: |
-| Property | Element Property Component property Directive property |  |
+| Property | Element Property                                   Component property                            Directive property | &lt;img \[src\]="heroImageUrl"&gt;                   &lt;app-hero-detail \[hero\]="currentHero"&gt;&lt;/app-hero-detail&gt; |
+|  |  |  |
 |  |  |  |
 |  |  |  |
 
