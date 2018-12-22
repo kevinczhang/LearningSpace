@@ -60,8 +60,6 @@ Directives typically raise custom events with an Angular **EventEmitter**. The d
 {% endtab %}
 
 {% tab title="Two-way" %}
-
-
 Event and property
 
 ```markup
