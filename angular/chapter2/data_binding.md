@@ -1,4 +1,4 @@
-# Template Syntax
+# Data binding
 
 In fact, once you start data binding, you are no longer working with HTML attributes. You aren't setting attributes. You are setting the properties of DOM elements, components, and directives.
 
@@ -6,7 +6,7 @@ In fact, once you start data binding, you are no longer working with HTML attrib
 
 The distinction between an HTML attribute and a DOM property is crucial to understanding how Angular binding works.
 
-**Attributes are defined by HTML. Properties are defined by the DOM (Document Object Model).**
+**Attributes are defined by HTML. Properties are defined by the DOM \(Document Object Model\).**
 
 A few HTML attributes have 1:1 mapping to properties. id is one example.
 
@@ -19,5 +19,4 @@ Many HTML attributes appear to map to properties ... but not in the way you migh
 That last category is confusing until you grasp this general rule:
 
 **Attributes initialize DOM properties and then they are done. Property values can change; attribute values can't.**
-
 
