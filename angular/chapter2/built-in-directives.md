@@ -16,5 +16,5 @@ description: >-
 
 * [`NgIf`](https://angular.io/guide/template-syntax#ngIf) - conditionally add or remove an element from the DOM
 * [`NgSwitch`](https://angular.io/guide/template-syntax#ngSwitch) - a set of directives that switch among alternative views
-* [NgForOf](https://angular.io/guide/template-syntax#ngFor) - repeat a template for each item in a list
+* [`NgForOf`](https://angular.io/guide/template-syntax#ngFor) - repeat a template for each item in a list
 
