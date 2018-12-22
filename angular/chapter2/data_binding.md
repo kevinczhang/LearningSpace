@@ -20,3 +20,29 @@ That last category is confusing until you grasp this general rule:
 
 **Attributes initialize DOM properties and then they are done. Property values can change; attribute values can't.**
 
+## Binding targets ****
+
+ The target of a data binding is something in the DOM.
+
+### Property <a id="property"></a>
+
+Element property  
+Component property  
+Directive property
+
+You should omit the brackets when all of the following are true:
+
+* The target property accepts a string value.
+* The string is a fixed value that you can bake into the template.
+* This initial value never changes.
+
+```markup
+<img [src]="heroImageUrl">
+<app-hero-detail [hero]="currentHero"></app-hero-detail>
+<div [ngClass]="{'special': isSpecial}"></div>
+
+<app-hero-detail prefix="You are my" [hero]="currentHero"></app-hero-detail>
+```
+
+
+
