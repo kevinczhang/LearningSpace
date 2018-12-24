@@ -8,5 +8,5 @@
     * [Intro to services and DI](angular/chapter1/introtoservicesanddi.md)
   * [Components & Templates](angular/chapter2/README.md)
     * [Data binding](angular/chapter2/data_binding.md)
-    * [Built-in directives](angular/chapter2/built-in-directives.md)
+    * [Directives](angular/chapter2/built-in-directives.md)
 
