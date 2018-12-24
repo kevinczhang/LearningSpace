@@ -130,6 +130,46 @@ Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgI
 </ng-template>
 ```
 
+#### One structural directive per host element.  You may apply only one _structural_ directive to an element. <a id="one-structural-directive-per-host-element"></a>
+
+### The _&lt;ng-template&gt;_
+
+ The &lt;ng-template&gt; is an Angular element for rendering HTML. It is never displayed directly. In fact, before rendering the view, Angular _replaces_ the `<ng-template>` and its contents with a comment.
+
+### Group sibling elements with &lt;ng-container&gt; <a id="group-sibling-elements-with-ng-container"></a>
+
+ The Angular `<ng-container>` is a grouping element that doesn't interfere with styles or layout because Angular _doesn't put it in the DOM_. __ The `<ng-container>` is a syntax element recognized by the Angular parser. It's not a directive, component, class, or interface.   It's more like the curly braces in a JavaScript `if`-block.  Without those braces, JavaScript would only execute the first statement when you intend to conditionally execute all of them as a single block. The `<ng-container>` satisfies a similar need in Angular templates.
+
+{% code-tabs %}
+{% code-tabs-item title="ngif-ngcontainer" %}
+```markup
+<p>
+  I turned the corner
+  <ng-container *ngIf="hero">
+    and saw {{hero.name}}. I waved
+  </ng-container>
+  and continued on my way.
+</p>
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="select-ngcontainer" %}
+```markup
+<div>
+  Pick your favorite hero
+  (<label><input type="checkbox" checked (change)="showSad = !showSad">show sad</label>)
+</div>
+<select [(ngModel)]="hero">
+  <ng-container *ngFor="let h of heroes">
+    <ng-container *ngIf="showSad || h.emotion !== 'sad'">
+      <option [ngValue]="h">{{h.name}} ({{h.emotion}})</option>
+    </ng-container>
+  </ng-container>
+</select>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ### Built-in _structural_ directives 
 
 * [`NgIf`](https://angular.io/guide/template-syntax#ngIf) - conditionally add or remove an element from the DOM
@@ -150,4 +190,57 @@ Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgI
   <app-unknown-hero  *ngSwitchDefault           [hero]="hero"></app-unknown-hero>
 </div>
 ```
+
+### Write a structural directive <a id="write-a-structural-directive"></a>
+
+ In this section, you write an `UnlessDirective` structural directive that does the opposite of [`NgIf`](https://angular.io/api/common/NgIf)`.`
+
+#### _TemplateRef_ and _ViewContainerRef_ <a id="templateref-and-viewcontainerref"></a>
+
+A simple structural directive like this one creates an [_embedded view_](https://angular.io/api/core/EmbeddedViewRef) from the Angular-generated `<ng-template>` and inserts that view in a [_view container_](https://angular.io/api/core/ViewContainerRef) adjacent to the directive's original `<p>` host element.
+
+You'll acquire the `<ng-template>` contents with a [`TemplateRef`](https://angular.io/api/core/TemplateRef) and access the _view container_ through a[`ViewContainerRef`](https://angular.io/api/core/ViewContainerRef).
+
+{% code-tabs %}
+{% code-tabs-item title="unless.directive.ts" %}
+```typescript
+import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
+
+/**
+ * Add the template content to the DOM unless the condition is true.
+ */
+@Directive({ selector: '[appUnless]'})
+export class UnlessDirective {
+  private hasView = false;
+
+  constructor(
+    private templateRef: TemplateRef<any>,
+    private viewContainer: ViewContainerRef) { }
+
+  @Input() set appUnless(condition: boolean) {
+    if (!condition && !this.hasView) {
+      this.viewContainer.createEmbeddedView(this.templateRef);
+      this.hasView = true;
+    } else if (condition && this.hasView) {
+      this.viewContainer.clear();
+      this.hasView = false;
+    }
+  }
+}
+```
+{% endcode-tabs-item %}
+
+{% code-tabs-item title="app.component.html" %}
+```markup
+<p *appUnless="condition" class="unless a">
+  (A) This paragraph is displayed because the condition is false.
+</p>
+
+<p *appUnless="!condition" class="unless b">
+  (B) Although the condition is true,
+  this paragraph is displayed because appUnless is set to false.
+</p>
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
