@@ -1,58 +1,5 @@
 # Components & Templates
 
-## Template reference variables \( \#var \)
-
- A **template reference variable** is often a reference to a DOM element within a template. It can also be a reference to an Angular component or directive or a [web component](https://developer.mozilla.org/en-US/docs/Web/Web_Components).  You can refer to a template reference variable _anywhere_ in the template. 
-
-```markup
-<form (ngSubmit)="onSubmit(heroForm)" #heroForm="ngForm">
-  <div class="form-group">
-    <label for="name">Name
-      <input class="form-control" name="name" required [(ngModel)]="hero.name">
-    </label>
-  </div>
-  <button type="submit" [disabled]="!heroForm.form.valid">Submit</button>
-</form>
-<div [hidden]="!heroForm.form.valid">
-  {{submitMessage}}
-</div>
-```
-
- The scope of a reference variable is the _entire template_. Do not define the same variable name more than once in the same template. The runtime value will be unpredictable.
-
-## Input and Output properties
-
-You can only bind to another component or directive through its Input and Output properties.
-
-An _Input_ property is a _settable_ property annotated with an `@`[`Input`](https://angular.io/api/core/Input) decorator. Values flow _into_ the property when it is data bound with a [property binding](https://angular.io/guide/template-syntax#property-binding)
-
-An _Output_ property is an _observable_ property annotated with an `@`[`Output`](https://angular.io/api/core/Output) decorator. The property almost always returns an Angular [`EventEmitter`](https://angular.io/api/core/EventEmitter). Values flow _out_ of the component as events bound with an [event binding](https://angular.io/guide/template-syntax#event-binding).
-
-
-
-{% hint style="warning" %}
- All data bound properties must be TypeScript _public_ properties. Angular never binds to a TypeScript _private_ property.
-{% endhint %}
-
-```typescript
-@Input()  hero: Hero;
-@Output() deleteRequest = new EventEmitter<Hero>();
-```
-
-### Input or output?
-
- _Input_ properties usually receive data values. _Output_ properties expose event producers, such as [`EventEmitter`](https://angular.io/api/core/EventEmitter) objects.
-
-![](../../.gitbook/assets/image.png)
-
-### Aliasing input/output properties 
-
- You can specify the alias for the property name by passing it into the input/output decorator like this:
-
-```typescript
-@Output('myClick') clicks = new EventEmitter<string>(); //  @Output(alias) propertyName = ...
-```
-
 ## The safe navigation operator \( ?. \) and null property paths
 
 ### **safe navigation operator \(`?.`\)**
@@ -89,4 +36,30 @@ The null hero's name is {{nullHero?.name}}
   The hero's marker is {{$any(hero).marker}}
 </div>
 ```
+
+## Special selectors for component styling
+
+### :host
+
+ Use the `:`[`host`](https://angular.io/api/core/Directive#host) pseudo-class selector to target styles in the element that _hosts_ the component \(as opposed to targeting elements _inside_ the component's template\). 
+
+```css
+:host(.active) {
+  border-width: 3px;
+}
+```
+
+### :host-context
+
+ Sometimes it's useful to apply styles based on some condition _outside_ of a component's view.  The `:host-context()` selector looks for a CSS class in any ancestor of the component host element, up to the document root. The `:host-context()` selector is useful when combined with another selector.
+
+ The following example applies a `background-color` style to all `<h2>` elements _inside_ the component, only if some ancestor element has the CSS class `theme-light`.
+
+```css
+:host-context(.theme-light) h2 {
+  background-color: #eef;
+}
+```
+
+
 
