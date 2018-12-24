@@ -120,7 +120,15 @@ export class AppModule { }
 
  Structural directives are responsible for HTML layout. They shape or reshape the DOM's _structure_, typically by adding, removing, or manipulating elements.  Structural directives are easy to recognize. An asterisk \(\*\) precedes the directive attribute name.
 
+### The asterisk \(\*\) prefix <a id="the-asterisk--prefix"></a>
 
+Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgIf) _attribute_ into a `<ng-template>` _element_, wrapped around the host element, like this.
+
+```markup
+<ng-template [ngIf]="hero">
+  <div class="name">{{hero.name}}</div>
+</ng-template>
+```
 
 ### Built-in _structural_ directives 
 
