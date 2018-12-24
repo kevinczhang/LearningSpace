@@ -4,7 +4,7 @@ description: A pipe takes in data as input and transforms it to a desired output
 
 # Pipes
 
-### Parameterizing a pipe <a id="parameterizing-a-pipe"></a>
+## Parameterizing a pipe
 
  A pipe can accept any number of optional parameters to fine-tune its output. To add parameters to a pipe, follow the pipe name with a colon \( : \) and then the parameter value \(such as `currency:'EUR'`\). If the pipe accepts multiple parameters, separate the values with colons \(such as `slice:1:5`\).
 
@@ -25,7 +25,7 @@ export class HeroBirthday2Component {
 }
 ```
 
-### Chaining pipes <a id="chaining-pipes"></a>
+## Chaining pipes
 
  You can chain pipes together in potentially useful combinations. 
 
@@ -34,7 +34,7 @@ The chained hero's birthday is
 {{  birthday | date:'fullDate' | uppercase}}
 ```
 
-### Custom pipes <a id="custom-pipes"></a>
+## Custom pipes
 
 {% code-tabs %}
 {% code-tabs-item title="exponential-strength.pipe.ts" %}
@@ -82,7 +82,7 @@ export class PowerBoostCalculatorComponent {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Pure and impure pipes <a id="pure-and-impure-pipes"></a>
+## Pure and impure pipes
 
 There are two categories of pipes: _pure_ and _impure_. Pipes are pure by default. Every pipe you've seen so far has been pure. You make a pipe impure by setting its pure flag to false. You could make the `FlyingHeroesPipe` impure like this:
 
@@ -93,13 +93,21 @@ There are two categories of pipes: _pure_ and _impure_. Pipes are pure by defaul
 })
 ```
 
-#### Pure pipes <a id="pure-pipes"></a>
+### Pure pipes
 
  Angular executes a _pure pipe_ only when it detects a _pure change_ to the input value. A pure change is either a change to a primitive input value \(`String`, `Number`, `Boolean`, `Symbol`\) or a changed object reference \(`Date`, `Array`, `Function`, `Object`\).
 
-#### Impure pipes <a id="impure-pipes"></a>
+### Impure pipes
 
 Angular executes an _impure pipe_ during every component change detection cycle. An impure pipe is called often, as often as every keystroke or mouse-move.
 
 With that concern in mind, implement an impure pipe with great care. An expensive, long-running pipe could destroy the user experience.
+
+## The impure AsyncPipe
+
+ The Angular [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is an interesting example of an impure pipe. The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) accepts a `Promise` or `Observable` as input and subscribes to the input automatically, eventually returning the emitted values.
+
+ The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is also stateful. The pipe maintains a subscription to the input `Observable` and keeps delivering values from that `Observable` as they arrive.
+
+
 

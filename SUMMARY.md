@@ -14,4 +14,5 @@
     * [User Input](angular/chapter2/user-input.md)
     * [Lifecycle Hooks](angular/chapter2/lifecycle-hooks.md)
     * [Pipes](angular/chapter2/pipes.md)
+  * [Forms](angular/forms.md)
 
