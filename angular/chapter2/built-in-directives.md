@@ -17,7 +17,7 @@ There are three kinds of directives in Angular:
 
 ## Attribute directive
 
- An attribute directive minimally requires building a controller class annotated with `@`[`Directive`](https://angular.io/api/core/Directive), which specifies the selector that identifies the attribute.
+An attribute directive minimally requires building a controller class annotated with `@`[`Directive`](https://angular.io/api/core/Directive), which specifies the selector that identifies the attribute.
 
 ```bash
 ng generate directive highlight
@@ -108,19 +108,19 @@ export class AppModule { }
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
- It's the brackets \(`[]`\) that make it an attribute selector. 
+It's the brackets \(`[]`\) that make it an attribute selector.
 
-### Built-in _attribute_ directives 
+### Built-in _attribute_ directives
 
 * [`NgClass`](https://angular.io/guide/template-syntax#ngClass) - add and remove a set of CSS classes
 * [`NgStyle`](https://angular.io/guide/template-syntax#ngStyle) - add and remove a set of HTML styles
 * [`NgModel`](https://angular.io/guide/template-syntax#ngModel) - two-way data binding to an HTML form element \(FormsModule is required to use ngModel\)
 
-##  Structural Directives
+## Structural Directives
 
- Structural directives are responsible for HTML layout. They shape or reshape the DOM's _structure_, typically by adding, removing, or manipulating elements.  Structural directives are easy to recognize. An asterisk \(\*\) precedes the directive attribute name.
+Structural directives are responsible for HTML layout. They shape or reshape the DOM's _structure_, typically by adding, removing, or manipulating elements. Structural directives are easy to recognize. An asterisk \(\*\) precedes the directive attribute name.
 
-### The asterisk \(\*\) prefix <a id="the-asterisk--prefix"></a>
+### The asterisk \(\*\) prefix  <a id="the-asterisk--prefix"></a>
 
 Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgIf) _attribute_ into a `<ng-template>` _element_, wrapped around the host element, like this.
 
@@ -130,15 +130,15 @@ Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgI
 </ng-template>
 ```
 
-#### One structural directive per host element.  You may apply only one _structural_ directive to an element. <a id="one-structural-directive-per-host-element"></a>
+#### One structural directive per host element.  You may apply only one _structural_ directive to an element.  <a id="one-structural-directive-per-host-element"></a>
 
 ### The _&lt;ng-template&gt;_
 
- The &lt;ng-template&gt; is an Angular element for rendering HTML. It is never displayed directly. In fact, before rendering the view, Angular _replaces_ the `<ng-template>` and its contents with a comment.
+The &lt;ng-template&gt; is an Angular element for rendering HTML. It is never displayed directly. In fact, before rendering the view, Angular _replaces_ the `<ng-template>` and its contents with a comment.
 
-### Group sibling elements with &lt;ng-container&gt; <a id="group-sibling-elements-with-ng-container"></a>
+### Group sibling elements with &lt;ng-container&gt;  <a id="group-sibling-elements-with-ng-container"></a>
 
- The Angular `<ng-container>` is a grouping element that doesn't interfere with styles or layout because Angular _doesn't put it in the DOM_. __ The `<ng-container>` is a syntax element recognized by the Angular parser. It's not a directive, component, class, or interface.   It's more like the curly braces in a JavaScript `if`-block.  Without those braces, JavaScript would only execute the first statement when you intend to conditionally execute all of them as a single block. The `<ng-container>` satisfies a similar need in Angular templates.
+The Angular `<ng-container>` is a grouping element that doesn't interfere with styles or layout because Angular _doesn't put it in the DOM_. \_\_ The `<ng-container>` is a syntax element recognized by the Angular parser. It's not a directive, component, class, or interface. It's more like the curly braces in a JavaScript `if`-block. Without those braces, JavaScript would only execute the first statement when you intend to conditionally execute all of them as a single block. The `<ng-container>` satisfies a similar need in Angular templates.
 
 {% code-tabs %}
 {% code-tabs-item title="ngif-ngcontainer" %}
@@ -170,7 +170,7 @@ Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgI
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Built-in _structural_ directives 
+### Built-in _structural_ directives
 
 * [`NgIf`](https://angular.io/guide/template-syntax#ngIf) - conditionally add or remove an element from the DOM
 * [`NgSwitch`](https://angular.io/guide/template-syntax#ngSwitch) - a set of directives that switch among alternative views
@@ -191,11 +191,11 @@ Internally, Angular translates the `*`[`ngIf`](https://angular.io/api/common/NgI
 </div>
 ```
 
-### Write a structural directive <a id="write-a-structural-directive"></a>
+### Write a structural directive  <a id="write-a-structural-directive"></a>
 
- In this section, you write an `UnlessDirective` structural directive that does the opposite of [`NgIf`](https://angular.io/api/common/NgIf)`.`
+In this section, you write an `UnlessDirective` structural directive that does the opposite of [`NgIf`](https://angular.io/api/common/NgIf)`.`
 
-#### _TemplateRef_ and _ViewContainerRef_ <a id="templateref-and-viewcontainerref"></a>
+#### _TemplateRef_ and _ViewContainerRef_  <a id="templateref-and-viewcontainerref"></a>
 
 A simple structural directive like this one creates an [_embedded view_](https://angular.io/api/core/EmbeddedViewRef) from the Angular-generated `<ng-template>` and inserts that view in a [_view container_](https://angular.io/api/core/ViewContainerRef) adjacent to the directive's original `<p>` host element.
 

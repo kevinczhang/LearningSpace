@@ -6,7 +6,7 @@ description: A pipe takes in data as input and transforms it to a desired output
 
 ## Parameterizing a pipe
 
- A pipe can accept any number of optional parameters to fine-tune its output. To add parameters to a pipe, follow the pipe name with a colon \( : \) and then the parameter value \(such as `currency:'EUR'`\). If the pipe accepts multiple parameters, separate the values with colons \(such as `slice:1:5`\).
+A pipe can accept any number of optional parameters to fine-tune its output. To add parameters to a pipe, follow the pipe name with a colon \( : \) and then the parameter value \(such as `currency:'EUR'`\). If the pipe accepts multiple parameters, separate the values with colons \(such as `slice:1:5`\).
 
 ```typescript
 @Component({
@@ -27,7 +27,7 @@ export class HeroBirthday2Component {
 
 ## Chaining pipes
 
- You can chain pipes together in potentially useful combinations. 
+You can chain pipes together in potentially useful combinations.
 
 ```typescript
 The chained hero's birthday is
@@ -95,7 +95,7 @@ There are two categories of pipes: _pure_ and _impure_. Pipes are pure by defaul
 
 ### Pure pipes
 
- Angular executes a _pure pipe_ only when it detects a _pure change_ to the input value. A pure change is either a change to a primitive input value \(`String`, `Number`, `Boolean`, `Symbol`\) or a changed object reference \(`Date`, `Array`, `Function`, `Object`\).
+Angular executes a _pure pipe_ only when it detects a _pure change_ to the input value. A pure change is either a change to a primitive input value \(`String`, `Number`, `Boolean`, `Symbol`\) or a changed object reference \(`Date`, `Array`, `Function`, `Object`\).
 
 ### Impure pipes
 
@@ -105,9 +105,7 @@ With that concern in mind, implement an impure pipe with great care. An expensiv
 
 ## The impure AsyncPipe
 
- The Angular [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is an interesting example of an impure pipe. The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) accepts a `Promise` or `Observable` as input and subscribes to the input automatically, eventually returning the emitted values.
+The Angular [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is an interesting example of an impure pipe. The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) accepts a `Promise` or `Observable` as input and subscribes to the input automatically, eventually returning the emitted values.
 
- The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is also stateful. The pipe maintains a subscription to the input `Observable` and keeps delivering values from that `Observable` as they arrive.
-
-
+The [`AsyncPipe`](https://angular.io/api/common/AsyncPipe) is also stateful. The pipe maintains a subscription to the input `Observable` and keeps delivering values from that `Observable` as they arrive.
 

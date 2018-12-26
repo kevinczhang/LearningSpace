@@ -9,7 +9,7 @@ description: >-
 
 ## Get user input from the $event object
 
- DOM events carry a payload of information that may be useful to the component.
+DOM events carry a payload of information that may be useful to the component.
 
 {% code-tabs %}
 {% code-tabs-item title="keyup.components.ts" %}
@@ -47,7 +47,7 @@ export class KeyUpComponent_v1 {
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Get user input from a template reference variable <a id="get-user-input-from-a-template-reference-variable"></a>
+### Get user input from a template reference variable  <a id="get-user-input-from-a-template-reference-variable"></a>
 
 ```typescript
 @Component({
