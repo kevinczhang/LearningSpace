@@ -1,4 +1,0 @@
-# Working in ES6
-
-
-
