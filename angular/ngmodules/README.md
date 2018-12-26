@@ -6,14 +6,28 @@ description: >-
 
 # NgModules
 
- Modules can be loaded eagerly when the application starts or lazy loaded asynchronously by the router.
+## Purpose of @NgModule
 
-NgModule metadata does the following:
+The metadata falls into three categories:
 
-* Declares which components, directives, and pipes belong to the module.
-* Makes some of those components, directives, and pipes public so that other module's component templates can use them.
-* Imports other modules with the components, directives, and pipes that components in the current module need.
-* Provides services that the other application components can use.
+* **Static:** Compiler configuration which tells the compiler about directive selectors and where in templates the directives should be applied through selector matching. This is configured via the [`declarations`](https://angular.io/api/core/NgModule#declarations) array.
+* **Runtime:** Injector configuration via the `providers` array.
+* **Composability/Grouping:** Bringing NgModules together and making them available via the [`imports`](https://angular.io/api/core/NgModule#imports)and [`exports`](https://angular.io/api/core/NgModule#exports) arrays.
+
+```typescript
+@NgModule({
+  // Static, that is compiler configuration
+  declarations: [], // Configure the selectors
+  entryComponents: [], // Generate the host factory
+
+  // Runtime, or injector configuration
+  providers: [], // Runtime injector configuration
+
+  // Composability / Grouping
+  imports: [], // composing NgModules together
+  exports: [] // making NgModules available to other parts of the app
+})
+```
 
 ##   JavaScript Modules vs. NgModules
 
@@ -45,4 +59,8 @@ There are two main kinds of entry components:
 #### `entryComponents` and the compiler <a id="entrycomponents-and-the-compiler"></a>
 
  For production apps you want to load the smallest code possible. The code should contain only the classes that you actually need and exclude components that are never used. For this reason, the Angular compiler only generates code for components which are reachable from the `entryComponents`; This means that adding more references to `@`[`NgModule.declarations`](https://angular.io/api/core/NgModule#declarations) does not imply that they will necessarily be included in the final bundle.
+
+##  NgModule FAQs
+
+[https://angular.io/guide/ngmodule-faq](https://angular.io/guide/ngmodule-faq)
 

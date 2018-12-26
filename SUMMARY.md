@@ -22,4 +22,6 @@
     * [The RxJS library](angular/observables-and-rxjs/the-rxjs-library.md)
   * [NgModules](angular/ngmodules/README.md)
     * [Feature Modules](angular/ngmodules/feature-modules.md)
+    * [NgModule metadata](angular/ngmodules/ngmodule-metadata.md)
+    * [Providers](angular/ngmodules/providers.md)
 
