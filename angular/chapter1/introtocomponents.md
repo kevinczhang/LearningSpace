@@ -10,7 +10,7 @@ The metadata for a component tells Angular where to get the major building block
 
 ## Data binding
 
-![Logo Title Text 1](../../.gitbook/assets/databinding.png)
+![Logo Title Text 1](../../.gitbook/assets/databinding%20%281%29.png)
 
 ## Directives
 

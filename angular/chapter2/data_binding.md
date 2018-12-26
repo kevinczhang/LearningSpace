@@ -20,9 +20,9 @@ That last category is confusing until you grasp this general rule:
 
 **Attributes initialize DOM properties and then they are done. Property values can change; attribute values can't.**
 
-## Binding targets ****
+## Binding targets _\*\*_
 
- The target of a data binding is something in the DOM.
+The target of a data binding is something in the DOM.
 
 {% tabs %}
 {% tab title="Property" %}
