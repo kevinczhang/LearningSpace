@@ -17,4 +17,9 @@
   * [Forms](angular/forms/README.md)
     * [Reactive Forms](angular/forms/reactive-forms.md)
     * [Form Validation](angular/forms/form-validation.md)
+  * [Observables & RxJS](angular/observables-and-rxjs/README.md)
+    * [Observables in Angular](angular/observables-and-rxjs/observables-in-angular.md)
+    * [The RxJS library](angular/observables-and-rxjs/the-rxjs-library.md)
+  * [NgModules](angular/ngmodules/README.md)
+    * [Feature Modules](angular/ngmodules/feature-modules.md)
 
