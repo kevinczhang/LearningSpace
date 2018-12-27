@@ -26,4 +26,6 @@
     * [Providers](angular/ngmodules/providers.md)
 * [Dependency Injection](dependency-injection/README.md)
   * [Hierarchical Dependency Injectors](dependency-injection/hierarchical-dependency-injectors.md)
+  * [Dependency Injection in Action](dependency-injection/dependency-injection-in-action.md)
+  * [Dependency Providers](dependency-injection/dependency-providers.md)
 
