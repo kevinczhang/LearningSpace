@@ -24,8 +24,8 @@
     * [Feature Modules](angular/ngmodules/feature-modules.md)
     * [NgModule metadata](angular/ngmodules/ngmodule-metadata.md)
     * [Providers](angular/ngmodules/providers.md)
-* [Dependency Injection](dependency-injection/README.md)
-  * [Hierarchical Dependency Injectors](dependency-injection/hierarchical-dependency-injectors.md)
-  * [Dependency Injection in Action](dependency-injection/dependency-injection-in-action.md)
-  * [Dependency Providers](dependency-injection/dependency-providers.md)
+  * [Dependency Injection](angular/dependency-injection/README.md)
+    * [Hierarchical Dependency Injectors](angular/dependency-injection/hierarchical-dependency-injectors.md)
+    * [Dependency Injection in Action](angular/dependency-injection/dependency-injection-in-action.md)
+    * [Dependency Providers](angular/dependency-injection/dependency-providers.md)
 

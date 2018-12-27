@@ -54,5 +54,5 @@ When a component requests a dependency, Angular tries to satisfy that dependency
 2. **Scenario: multiple edit sessions**
 3. **Scenario: specialized providers**
 
-![](../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image%20%281%29.png)
 
