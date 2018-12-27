@@ -24,4 +24,6 @@
     * [Feature Modules](angular/ngmodules/feature-modules.md)
     * [NgModule metadata](angular/ngmodules/ngmodule-metadata.md)
     * [Providers](angular/ngmodules/providers.md)
+* [Dependency Injection](dependency-injection/README.md)
+  * [Hierarchical Dependency Injectors](dependency-injection/hierarchical-dependency-injectors.md)
 
