@@ -61,7 +61,3 @@ The following example applies a `background-color` style to all `<h2>` elements 
 }
 ```
 
-##  Dynamic Component example
-
-[https://angular.io/guide/dynamic-component-loader](https://angular.io/guide/dynamic-component-loader)
-
