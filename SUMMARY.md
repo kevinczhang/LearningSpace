@@ -15,5 +15,8 @@
     * [Lifecycle Hooks](angular/chapter2/lifecycle-hooks.md)
     * [Pipes](angular/chapter2/pipes.md)
   * [Forms](angular/forms.md)
-* [LINQ](linq.md)
+* [LINQ](linq/README.md)
+  * [Data Transformations](linq/data-transformations.md)
+  * [Query Syntax and Method Syntax](linq/query-syntax-and-method-syntax.md)
+  * [Standard Query Operators](linq/standard-query-operators.md)
 
