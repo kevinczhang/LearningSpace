@@ -63,12 +63,19 @@ class Clock extends React.Component {
       date: new Date()
     });
   }
+  
+  handleClick = () => {
+    console.log('this is:', this);
+  }
 
   render() {
     return (
       <div>
         <h1>Hello, world!</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+        <button onClick={this.handleClick}>
+          Click me
+        </button>
       </div>
     );
   }
@@ -93,4 +100,45 @@ this.setState((state, props) => ({
 #### State Updates are Merged <a id="state-updates-are-merged"></a>
 
  When you call `setState()`, React merges the object you provide into the current state.
+
+## Preventing Component from Rendering
+
+In rare cases you might want a component to hide itself even though it was rendered by another component. To do this return `null` instead of its render output. 
+
+Returning `null` from a component’s `render` method does not affect the firing of the component’s lifecycle methods. For instance `componentDidUpdate` will still be called.
+
+## Keys
+
+ Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity:
+
+```jsx
+function ListItem(props) {
+  // Correct! There is no need to specify the key here:
+  return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    // Correct! Key should be specified inside the array.
+    <ListItem key={number.toString()}
+              value={number} />
+  );
+  return (
+    <ul>
+      {listItems}
+    </ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <NumberList numbers={numbers} />,
+  document.getElementById('root')
+);
+```
+
+ Keys only make sense in the context of the surrounding array.  Keys used within arrays should be unique among their siblings. However they don’t need to be globally unique. 
+
+
 
