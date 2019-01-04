@@ -1,5 +1,7 @@
 ---
-description: 'React is library, but Angular, Vue and Ember are Frameworks.'
+description: >-
+  React is library, but Angular, Vue and Ember are Frameworks. Elements and
+  components are building blocks of React apps.
 ---
 
 # React
@@ -8,13 +10,11 @@ description: 'React is library, but Angular, Vue and Ember are Frameworks.'
 
 1. React.js for Static sites; React Native for Mobile; React Desktop for Desktop \(Ionic is using Angular\); NEXT.js for Server-rendered; React VR for Virtual Reality
 2. React Renderers: react-dom for react.js; react-native for React Native; react-vr for React VR \(github.com/chentsulin/aweson-react-renderer\)
-3.  JSX — Allows us to write HTML like syntax which gets transformed to lightweight JavaScript objects. 
-4. JSX is quite similar to html and can convert html to JSX using online compiler or htmltojsx on npm. 
-5. Others frameworks using "JS" in HTML, while React use "HTML" in JS.
-6. create-react-app good as start kit.
-7. ES class good to create javascript class
-8. PropTypes or Typescript for strong type.
-9. State Management option:  Plain React \(Component State\), Flux \(Centralized State, by facebook\), Redux \(Centralized State, most popular\) , MobX \(Observable\).
+3. Others frameworks using "JS" in HTML, while React use "HTML" in JS.
+4. create-react-app good as start kit.
+5. ES class good to create javascript class
+6. PropTypes or Typescript for strong type.
+7. State Management option:  Plain React \(Component State\), Flux \(Centralized State, by facebook\), Redux \(Centralized State, most popular\) , MobX \(Observable\).
 
 ## Popular tools for react corresponding to Angular
 

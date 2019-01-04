@@ -2,7 +2,11 @@
 
 * [Introduction](README.md)
 * [Front end](front-end/README.md)
-  * [React](front-end/react.md)
+  * [React](front-end/react/README.md)
+    * [JSX and Element](front-end/react/jsx.md)
+    * [Components and Props](front-end/react/component.md)
+    * [Redux](front-end/react/redux.md)
+    * [Life cycle](front-end/react/life-cycle.md)
   * [Angular](front-end/angular/README.md)
     * [Architecture](front-end/angular/chapter1/README.md)
       * [Introduction to modules](front-end/angular/chapter1/introtomodules.md)
