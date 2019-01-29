@@ -33,7 +33,7 @@ We cannot declare class/interface with private or protected access specifiers.
 
 ## Encapsulation
 
- It is the mechanism that binds together code and the data it manipulates.  Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
+It is the mechanism that binds together code and the data it manipulates.  Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
 
 ## Inheritance
 
@@ -61,4 +61,10 @@ class derived-class extends base-class
 5. **Inheritance vs Abstraction:** A Java interface can be implemented using keyword “implements” and abstract class can be extended using keyword “extends”.
 6. **Multiple implementation:** An interface can extend another Java interface only, an abstract class can extend another Java class and implement multiple Java interfaces.
 7. **Accessibility of Data Members:** Members of a Java interface are public by default. A Java abstract class can have class members like private, protected, etc.
+
+##  Polymorphism
+
+ **Polymorphism in Java** is a concept by which we can perform a _single action in different ways_.  
+
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
 
