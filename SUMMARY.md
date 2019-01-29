@@ -30,6 +30,8 @@
   * [OOP Concepts](java/oop-concepts.md)
   * [Garbage Collection](java/garbage-collection.md)
   * [Common Questions](java/common-questions.md)
+  * [JVM](java/jvm.md)
+  * [JVM Stack Area](java/jvm-stack-area.md)
 * [Node](node/README.md)
   * [Modules](node/modules.md)
   * [Built-in Modules](node/built-in-modules.md)
