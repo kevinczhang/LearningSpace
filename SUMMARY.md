@@ -26,6 +26,8 @@
     * [Data Transformations](dotnet/linq/data-transformations.md)
     * [Query Syntax and Method Syntax](dotnet/linq/query-syntax-and-method-syntax.md)
     * [Standard Query Operators](dotnet/linq/standard-query-operators.md)
-* [Java](java.md)
+* [Java](java/README.md)
+  * [OOP Concepts](java/oop-concepts.md)
+  * [Garbage Collection](java/garbage-collection.md)
 * [Node](node.md)
 
