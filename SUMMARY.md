@@ -29,5 +29,9 @@
 * [Java](java/README.md)
   * [OOP Concepts](java/oop-concepts.md)
   * [Garbage Collection](java/garbage-collection.md)
-* [Node](node.md)
+* [Node](node/README.md)
+  * [Modules](node/modules.md)
+  * [Built-in Modules](node/built-in-modules.md)
+  * [NPM](node/npm.md)
+  * [Event](node/event.md)
 
