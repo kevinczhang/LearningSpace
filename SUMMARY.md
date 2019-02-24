@@ -28,5 +28,6 @@
     * [Hierarchical Dependency Injectors](angular/dependency-injection/hierarchical-dependency-injectors.md)
     * [Dependency Injection in Action](angular/dependency-injection/dependency-injection-in-action.md)
     * [Dependency Providers](angular/dependency-injection/dependency-providers.md)
-* [AngularJS](angularjs.md)
+* [AngularJS](angularjs/README.md)
+  * [AngularJS Vs. Angular](angularjs/angularjs-vs.-angular.md)
 
