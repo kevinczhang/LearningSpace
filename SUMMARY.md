@@ -35,4 +35,11 @@
   * [Components and Props](react/components-and-props.md)
   * [Life cycle](react/life-cycle.md)
   * [Redux](react/redux.md)
+* [Sass](sass/README.md)
+  * [Variables](sass/variables.md)
+  * [Common functions](sass/common-functions.md)
+  * [Color Functions](sass/color-functions.md)
+  * [Directives](sass/directives.md)
+  * [Nesting](sass/nesting.md)
+  * [Control Directives](sass/control-directives.md)
 
