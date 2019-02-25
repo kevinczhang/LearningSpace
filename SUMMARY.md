@@ -42,4 +42,7 @@
   * [Directives](sass/directives.md)
   * [Nesting](sass/nesting.md)
   * [Control Directives](sass/control-directives.md)
+* [Bootstrap](bootstrap.md)
+* [Javascript](javascript/README.md)
+  * [Basics](javascript/basics.md)
 

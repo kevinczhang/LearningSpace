@@ -1,6 +1,6 @@
 # Redux
 
-![Redux workflow](../.gitbook/assets/image%20%282%29.png)
+![Redux workflow](../.gitbook/assets/image%20%284%29.png)
 
 ## Sample code
 
