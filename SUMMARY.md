@@ -45,4 +45,9 @@
 * [Bootstrap](bootstrap.md)
 * [Javascript](javascript/README.md)
   * [Basics](javascript/basics.md)
+  * [Array](javascript/array.md)
+  * [Object](javascript/object.md)
+  * [String](javascript/string.md)
+  * [Number](javascript/number.md)
+  * [Math](javascript/math.md)
 

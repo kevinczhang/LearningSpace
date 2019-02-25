@@ -95,7 +95,7 @@ export class NameChildComponent {
 
 _Input_ properties usually receive data values. _Output_ properties expose event producers, such as [`EventEmitter`](https://angular.io/api/core/EventEmitter) objects.
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%287%29.png)
 
 ## Aliasing input/output properties
 

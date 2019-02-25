@@ -10,7 +10,7 @@ When a web page is loaded, the browser creates a **D**ocument **O**bject **M**od
 
 The **HTML DOM** model is constructed as a tree of **Objects**:
 
-![The HTML DOM Tree of Objects](../.gitbook/assets/image%20%282%29.png)
+![The HTML DOM Tree of Objects](../.gitbook/assets/image%20%283%29.png)
 
 Window object
 
