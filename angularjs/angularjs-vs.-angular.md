@@ -46,6 +46,10 @@ Angular focuses on “\( \)” for event binding and “\[ \]” for property bi
 
  `ngModule` was introduce to make organizing and connecting components together much easier **with @NgModule annotation.**  The `@NgModule` decorator takes a configuration object that will typically contain imports, component declarations and if it is a top-level module, a reference to the component we want to bootstrap.  And instead of bootstrapping our top-level component directly, we will instead bootstrap our top-level module which is then responsible for delegating the implementation details. In this case, we know that when `AppModule` is instantiated, that it will in turn, instantiate the `AppComponent`.
 
+## Performance
+
+Angular is 5 times faster than AngularJS with the change detection mechanism from digest loop in AngularJS to a custom implementation by using zoneJs in Angular. Angular implements unidirectional tree-based change detection and uses Hierarchical Dependency Injection system. This significantly boosts performance for the framework.
+
 ## Mini App example
 
 ### AngularJS
