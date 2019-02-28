@@ -44,6 +44,7 @@
   * [Control Directives](sass/control-directives.md)
 * [Bootstrap](bootstrap.md)
 * [Javascript](javascript/README.md)
+  * [DOM](javascript/dom.md)
   * [Basics](javascript/basics.md)
   * [Array](javascript/array.md)
   * [Object](javascript/object.md)
