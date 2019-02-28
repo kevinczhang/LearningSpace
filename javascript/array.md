@@ -65,7 +65,7 @@ for (s of myStringArray) {
 ```javascript
 <script>
 	var codes = [10, 20, 30, 0, -1];
-	var slice1 = codes.slice(1, 2);
+	var slice1 = codes.slice(1);
 	var slice2 = codes.slice(1, 3);
 	document.write(slice1 + "; " + slice2);
 	
@@ -73,7 +73,7 @@ for (s of myStringArray) {
 	document.write(codes);
 </script>
 	Output
-	20; 20,30
+	20,30,0,-1; 20,30
 	10,900, 1000, 1100, 0, -1
 ```
 
