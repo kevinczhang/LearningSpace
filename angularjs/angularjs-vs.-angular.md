@@ -59,7 +59,9 @@ Angular is 5 times faster than AngularJS with the change detection mechanism fro
 ```markup
 <!DOCTYPE html>
 <html>
+<head>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head/>
 <body>
 
     <div ng-app="myApp" ng-controller="myCtrl">

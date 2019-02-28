@@ -16,5 +16,20 @@ The **ng-model** directive binds the value of HTML controls \(input, select, tex
 
 The **ng-bind** directive binds application data to the HTML view.
 
+## AngularJS Modules
+
+An AngularJS module defines an application. The module is a container for the different parts of an application. The module is a container for the application controllers. Controllers always belong to a module. You can use the module to add your own directives to your applications.
+
+## Restrictons on directives
+
+The legal restrict values are:
+
+* `E` for Element name
+* `A` for Attribute
+* `C` for Class
+* `M` for Comment
+
+By default the value is `EA`, meaning that both Element names and attribute names can invoke the directive.
+
 
 
