@@ -45,6 +45,7 @@
 * [Bootstrap](bootstrap.md)
 * [Javascript](javascript/README.md)
   * [DOM](javascript/dom.md)
+  * [AJAX](javascript/ajax.md)
   * [Basics](javascript/basics.md)
   * [Array](javascript/array.md)
   * [Object](javascript/object.md)

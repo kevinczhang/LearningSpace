@@ -4,10 +4,6 @@ description: Document Object Model
 
 # DOM
 
-
-
-## JavaScript HTML DOM \(Document Object Model\)
-
 When a web page is loaded, the browser creates a **D**ocument **O**bject **M**odel of the page. With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
 
 The **HTML DOM** model is constructed as a tree of **Objects**:
@@ -58,4 +54,6 @@ The Browser Object Model \(BOM\) allows JavaScript to "talk to" the browser. All
 | Method | Description |
 | :--- | :--- |
 | document.getElementById\(_id_\).onclick = function\(\){_code_} | Adding event handler code to an onclick event |
+
+
 
