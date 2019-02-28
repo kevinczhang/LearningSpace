@@ -34,7 +34,7 @@ Angular creates it, renders it, creates and renders its children, checks it when
       </th>
       <th style="text-align:left">
         <p>Initialize the directive/component after Angular first displays the data-bound
-          properties and sets the directive/component's input properties.</p>
+          properties and sets the directive/component&apos;s input properties.</p>
         <p>Called <em>once</em>, after the <em>first</em>  <code>ngOnChanges()</code>.</p>
       </th>
     </tr>
@@ -46,8 +46,8 @@ Angular creates it, renders it, creates and renders its children, checks it when
       <th style="text-align:left"><code>ngDoCheck()</code>
       </th>
       <th style="text-align:left">
-        <p>Detect and act upon changes that Angular can't or won't detect on its
-          own.</p>
+        <p>Detect and act upon changes that Angular can&apos;t or won&apos;t detect
+          on its own.</p>
         <p>Called during every change detection run, immediately after <code>ngOnChanges()</code> and <code>ngOnInit()</code>.</p>
       </th>
     </tr>
@@ -59,8 +59,8 @@ Angular creates it, renders it, creates and renders its children, checks it when
       <th style="text-align:left"><code>ngAfterContentInit()</code>
       </th>
       <th style="text-align:left">
-        <p>Respond after Angular projects external content into the component's view
-          / the view that a directive is in.</p>
+        <p>Respond after Angular projects external content into the component&apos;s
+          view / the view that a directive is in.</p>
         <p>Called <em>once</em> after the first <code>ngDoCheck()</code>.</p>
       </th>
     </tr>
@@ -84,8 +84,8 @@ Angular creates it, renders it, creates and renders its children, checks it when
       <th style="text-align:left"><code>ngAfterViewInit()</code>
       </th>
       <th style="text-align:left">
-        <p>Respond after Angular initializes the component's views and child views
-          / the view that a directive is in.</p>
+        <p>Respond after Angular initializes the component&apos;s views and child
+          views / the view that a directive is in.</p>
         <p>Called <em>once</em> after the first <a href="https://angular.io/api/core/AfterContentChecked#ngAfterContentChecked"><code>ngAfterContentChecked()</code></a>.</p>
       </th>
     </tr>
@@ -97,8 +97,8 @@ Angular creates it, renders it, creates and renders its children, checks it when
       <th style="text-align:left"><a href="https://angular.io/api/core/AfterViewChecked#ngAfterViewChecked"><code>ngAfterViewChecked()</code></a>
       </th>
       <th style="text-align:left">
-        <p>Respond after Angular checks the component's views and child views / the
-          view that a directive is in.</p>
+        <p>Respond after Angular checks the component&apos;s views and child views
+          / the view that a directive is in.</p>
         <p>Called after the <code>ngAfterViewInit</code> and every subsequent <a href="https://angular.io/api/core/AfterContentChecked#ngAfterContentChecked"><code>ngAfterContentChecked()</code></a>.</p>
       </th>
     </tr>
