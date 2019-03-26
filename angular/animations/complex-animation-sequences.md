@@ -53,5 +53,49 @@ A second function called [`sequence`](https://angular.io/api/animations/sequence
 * Use [`style`](https://angular.io/api/animations/style)`()` to apply the provided styling data immediately.
 * Use [`animate()`](https://angular.io/api/animations/browser/testing/MockAnimationDriver#animate) to apply styling data over a given time interval.
 
+## Reusable animations
 
+### Creating reusable animations <a id="creating-reusable-animations"></a>
+
+ To create a reusable animation, use the [`animation()`](https://angular.io/api/animations/animation) method to define an animation in a separate `.ts` file and declare this animation definition as a `const` export variable. You can then import and reuse this animation in any of your app components using the [`useAnimation()`](https://angular.io/api/animations/useAnimation) API.
+
+```typescript
+import {
+  animation, trigger, animateChild, group,
+  transition, animate, style, query
+} from '@angular/animations';
+
+export const transAnimation = animation([
+  style({
+    height: '{{ height }}',
+    opacity: '{{ opacity }}',
+    backgroundColor: '{{ backgroundColor }}'
+  }),
+  animate('{{ time }}')
+]);
+```
+
+ You can import the reusable `transAnimation` variable in your component class and reuse it using the [`useAnimation`](https://angular.io/api/animations/useAnimation)`()` method as shown below.
+
+```typescript
+import { Component } from '@angular/core';
+import { useAnimation, transition, trigger, style, animate } from '@angular/animations';
+import { transAnimation } from './animations';
+
+@Component({
+    trigger('openClose', [
+      transition('open => closed', [
+        useAnimation(transAnimation, {
+          params: {
+            height: 0,
+            opacity: 1,
+            backgroundColor: 'red',
+            time: '1s'
+          }
+        })
+      ])
+    ])
+  ],
+})
+```
 
