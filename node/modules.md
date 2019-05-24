@@ -64,5 +64,3 @@ Save the code above in a file called "myfirstmodule.js"
 
  **var dt = require\('./myfirstmodule'\);**
 
-\*\*\*\*
-

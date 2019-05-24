@@ -4,7 +4,7 @@ description: Node.js is perfect for event-driven applications.
 
 # Event
 
- Every action on a computer is an event. Like when a connection is made or a file is opened.
+Every action on a computer is an event. Like when a connection is made or a file is opened.
 
 ### Events Module
 
