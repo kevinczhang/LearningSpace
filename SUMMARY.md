@@ -57,4 +57,5 @@
 * [RxJS](rxjs/README.md)
   * [Observable](rxjs/observable.md)
   * [Operators](rxjs/operators.md)
+  * [Subscription](rxjs/subscription.md)
 
