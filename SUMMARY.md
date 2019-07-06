@@ -54,4 +54,7 @@
   * [Modules](node/modules.md)
 * [Typescript](typescript/README.md)
   * [Basic Types](typescript/basic-types.md)
+* [RxJS](rxjs/README.md)
+  * [Observable](rxjs/observable.md)
+  * [Operators](rxjs/operators.md)
 
