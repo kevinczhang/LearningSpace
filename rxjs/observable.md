@@ -4,10 +4,12 @@ description: Observables are lazy Push collections of multiple values.
 
 # Observable
 
-|  | SINGLE |  |
+
+
+|  | SINGLE | MULTIPLE |
 | :--- | :--- | :--- |
 | Pull | Function | Iterator |
-| p |  |  |
+| Push | Promise | Observable |
 
 ### **Pull versus Push**
 
@@ -17,7 +19,12 @@ _Pull_ and _Push_ are two different protocols that describe how a data _Producer
 
 **What is Push?** In Push systems, the Producer determines when to send data to the Consumer. The Consumer is unaware of when it will receive that data.
 
-[Pull versus Push](https://www.notion.so/433276c076c548cfa0d58b49147df672)
+Pull versus Push
+
+|  | PRODUCER | CONSUMER |
+| :--- | :--- | :--- |
+| Pull | Passive: produces data when requested. | Active: decides when data is requested. |
+| Push | Active: produces data at its own pace. | Passive: reacts to received data. |
 
 > Subscribing to an Observable is analogous to calling a Function.
 
