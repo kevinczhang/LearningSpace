@@ -61,4 +61,5 @@
     * [Creation Operators](rxjs/operators/creation-operators.md)
     * [Transformation Operators](rxjs/operators/transformation-operators.md)
   * [Subscription](rxjs/subscription.md)
+  * [Subject](rxjs/subject.md)
 
