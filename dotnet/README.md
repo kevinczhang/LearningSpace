@@ -40,11 +40,14 @@ Theoretically their are some differences between Abstract Class and Interface wh
 * An abstract class can’t be used for multiple inheritance while interface can be used as multiple inheritance. 
 * An abstract class use constructor while in an interface we don’t have any type of constructor.
 
-## constant V.S. read only in c\#
+## const V.S. readonly
 
-Constant \(const\) and Readonly \(readonly\) both looks like same as per the uses but they have some differences:
-
-Constant is known as “const” keyword in C\# which is also known immutable values which are known at compile time and do not change their values at run time like in any function or constructor for the life of application till the application is running.
-
-Readonly is known as “readonly” keyword in C\# which is also known immutable values and are known at compile and run time and do not change their values at run time like in any function for the life of application till the application is running. You can assay their value by constructor when we call constructor with “new” keyword.
+| READONLY KEYWORD | CONST KEYWORD |
+| :--- | :--- |
+| In C\#, readonly fields can be created using readonly keyword | In C\#, constant fields are created using const keyword. |
+| ReadOnly is a runtime constant. | Const is a compile time constant. |
+| The value of readonly field can be changed. | The value of the const field can not be changed. |
+| It cannot be declared inside the method. | It can be declared inside the method. |
+| In readonly fields, we can assign values in declaration and in the contructor part. | In const fields, we can only assign values in declaration part. |
+| It can be used with static modifiers. | It cannot be used with static modifiers. |
 
