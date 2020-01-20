@@ -23,8 +23,8 @@ IEnumerable<int> numQuery2 = numbers.Where(num => num % 2 == 0).OrderBy(n => n);
 
  A lambda expression is an [anonymous function](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/anonymous-methods) that you can use to create [delegates](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/using-delegates) or [expression tree](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/expression-trees/index) types.  To create a lambda expression, you specify input parameters \(if any\) on the left side of the lambda operator [=&gt;](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator), and you put the expression or statement block on the other side. 
 
-{% code-tabs %}
-{% code-tabs-item title="Delegate" %}
+{% tabs %}
+{% tab title="Delegate" %}
 ```csharp
 delegate int del(int i);  
 static void Main(string[] args)  
@@ -33,9 +33,9 @@ static void Main(string[] args)
     int j = myDelegate(5); //j = 25  
 }
 ```
-{% endcode-tabs-item %}
+{% endtab %}
 
-{% code-tabs-item title="Expression Tree" %}
+{% tab title="Expression Tree" %}
 ```csharp
 using System.Linq.Expressions;  
   
@@ -50,12 +50,12 @@ namespace ConsoleApplication1
     }  
 }
 ```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
+{% endtab %}
+{% endtabs %}
 
  The Lambda expression evolves from anonymous method by first removing the delegate keyword and parameter type and adding a lambda operator =&gt;.
 
-![Lambda Expression from Anonymous Method](../../.gitbook/assets/image%20%284%29.png)
+![Lambda Expression from Anonymous Method](../.gitbook/assets/image%20%286%29.png)
 
 1. Lambda Expression is a shorter way of representing anonymous method.
 2. Lambda Expression syntax: `parameters => body expression`
