@@ -1,4 +1,12 @@
+---
+description: >-
+  For different data types, a certain amount of memory space is reserved on our
+  computer.
+---
+
 # Data Types
+
+Data types that represent the whole numbers are expressed with a certain number of bits. 
 
 ## Boolean type 
 
@@ -16,9 +24,13 @@ bool a = true;
 
 ## Integral Types
 
-sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), long \(64\), ulong \(64\), char
+sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), long \(64\), ulong \(64\)
 
-Data types that represent the whole numbers are expressed with a certain number of bits. For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
+For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
+
+![integral types](../.gitbook/assets/image%20%2812%29.png)
+
+ Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
 
 ## Number Types with floating point
 
