@@ -28,7 +28,7 @@ sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), l
 
 For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
 
-![integral types](../.gitbook/assets/image%20%2816%29.png)
+![integral types](../.gitbook/assets/image%20%2818%29.png)
 
  Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
 
