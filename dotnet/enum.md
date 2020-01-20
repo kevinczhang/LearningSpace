@@ -9,7 +9,16 @@ An enum is used to create numeric constants in .NET framework. All the members o
 The default underlying type of the enumeration element is int. By default, the first enumerator has the value 0, and the value of each successive enumerator is increased by 1.
 
 ```csharp
-enum Dow {Sat, Sun, Mon, Tue, Wed, Thu, Fri}; 
+public enum DaysInWeek
+{
+    Monday=10,
+    Tuesday=20,
+    Wednesday=35,
+    Thursday=48,
+    Friday=74,
+    Saturday=12,
+    Sunday=154
+}
 ```
 
 * Enums are enumerated data type in c\#. 
