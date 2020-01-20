@@ -52,15 +52,19 @@ char a = 'a';
 
 * reference type
 
-By default value types are non nullable. To make them nullable use ? int i = 0 \(i is non nullable, so "i" cannot be set to null, i = null will generate compiler error\) int? j = 0 \(j is nullable int, so j=null is legal\)
+Verbatim Literal is a string with an @ symbol prefix, as in @“Hello". Verbatim literals make escape sequences translate as normal printable characters to enhance readability.
 
-int AvailableTickets; int? TicketsOnSale = null;
+Practical Example: Without Verbatim Literal : “C:\Pragim\DotNet\Training\Csharp” – Less Readable With Verbatim Literal : @“C:\Pragim\DotNet\Training\Csharp” – Better Readable
+
+## Nullable
+
+### By default value types are non nullable. To make them nullable use ? 
+
+int i = 0 \(i is non nullable, so "i" cannot be set to null, i = null will generate compiler error\) int? j = 0 \(j is nullable int, so j=null is legal\)
+
+### int AvailableTickets; int? TicketsOnSale = null;
 
 //Using null coalesce operator ?? AvailableTickets = TicketsOnSale ?? 0;
 
-Verbatim Literal is a string with an @ symbol prefix, as in @“Hello".
 
-Verbatim literals make escape sequences translate as normal printable characters to enhance readability.
-
-Practical Example: Without Verbatim Literal : “C:\Pragim\DotNet\Training\Csharp” – Less Readable With Verbatim Literal : @“C:\Pragim\DotNet\Training\Csharp” – Better Readable
 
