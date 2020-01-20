@@ -28,13 +28,13 @@ sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), l
 
 For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
 
-![integral types](../.gitbook/assets/image%20%2812%29.png)
+![integral types](../.gitbook/assets/image%20%2813%29.png)
 
  Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
 
 ## Number Types with floating point
 
-![Number types](../.gitbook/assets/image%20%285%29.png)
+![Number types](../.gitbook/assets/image%20%286%29.png)
 
 
 
@@ -66,5 +66,7 @@ int i = 0 \(i is non nullable, so "i" cannot be set to null, i = null will gener
 
 //Using null coalesce operator ?? AvailableTickets = TicketsOnSale ?? 0;
 
+## Operators
 
+![](../.gitbook/assets/image%20%283%29.png)
 

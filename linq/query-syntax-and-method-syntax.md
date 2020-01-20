@@ -55,7 +55,7 @@ namespace ConsoleApplication1
 
  The Lambda expression evolves from anonymous method by first removing the delegate keyword and parameter type and adding a lambda operator =&gt;.
 
-![Lambda Expression from Anonymous Method](../.gitbook/assets/image%20%286%29.png)
+![Lambda Expression from Anonymous Method](../.gitbook/assets/image%20%287%29.png)
 
 1. Lambda Expression is a shorter way of representing anonymous method.
 2. Lambda Expression syntax: `parameters => body expression`
