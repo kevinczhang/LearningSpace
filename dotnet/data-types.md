@@ -70,3 +70,10 @@ int i = 0 \(i is non nullable, so "i" cannot be set to null, i = null will gener
 
 ![](../.gitbook/assets/image%20%284%29.png)
 
+ Assignment Operator **=**  
+Arithmetic Operators like **+,-,\*,/,%**   
+Comparison Operators like **==, !=,&gt;, &gt;=, &lt;, &lt;=**   
+Conditional Operators like **&&, \|\|**  
+Ternary Operator **?:**  
+Null Coalescing Operator **??** 
+
