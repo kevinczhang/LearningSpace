@@ -33,7 +33,7 @@ object o = i; //performs boxing
 
 As you know, all the reference types stored on heap where it contains the address of the value and value type is just an actual value stored on the stack.
 
-![](../../.gitbook/assets/image%20%285%29.png)
+![](../../.gitbook/assets/image%20%286%29.png)
 
 **Unboxing** is the reverse of this process, taking a reference type and turning it into a value type.
 

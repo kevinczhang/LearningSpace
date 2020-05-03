@@ -7,7 +7,7 @@
 
 So, in .NET the application execution consists of 2 steps 1. Language compiler, compiles the Source Code into Intermediate Language \(IL\) 2. JIT compiler in CLR converts, the IL into native code which can then be run on the underlying operating system.
 
-![](../.gitbook/assets/image%20%2825%29.png)
+![](../.gitbook/assets/image%20%2826%29.png)
 
 ## Managed vs Unmanaged Code
 

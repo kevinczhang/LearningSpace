@@ -116,3 +116,65 @@ Points to Remember
 8. Delegate is used to declare an event and anonymous methods in C\#.
 {% endhint %}
 
+## `Func` Delegate
+
+Func is a generic delegate included in the `System` namespace. It has zero or more input parameters and one out parameter. The last parameter is considered as an out parameter.
+
+![](../../.gitbook/assets/image%20%281%29.png)
+
+```csharp
+class Program
+{
+    static int Sum(int x, int y)
+    {
+        return x + y;
+    }
+
+    static void Main(string[] args)
+    {
+        Func<int,int, int> add = Sum;
+
+        int result = add(10, 10);
+
+        Console.WriteLine(result); 
+    }
+}
+```
+
+## Action Delegate
+
+ An Action type delegate is the same as [Func delegate](https://www.tutorialsteacher.com/csharp/csharp-func-delegate) except that the Action delegate doesn't return a value. In other words, an Action delegate can be used with a method that has a void return type.
+
+```csharp
+static void ConsolePrint(int i)
+{
+    Console.WriteLine(i);
+}
+
+static void Main(string[] args)
+{
+    Action<int> printActionDel = ConsolePrint;
+    printActionDel(10);
+}
+```
+
+## Predicate Delegate
+
+It represents a method that contains a set of criteria and checks whether the passed parameter meets those criteria or not. A predicate delegate methods must take one input parameter and return a boolean - true or false.
+
+```csharp
+static bool IsUpperCase(string str)
+{
+    return str.Equals(str.ToUpper());
+}
+
+static void Main(string[] args)
+{
+    Predicate<string> isUpper = IsUpperCase;
+
+    bool result = isUpper("hello world!!");
+
+    Console.WriteLine(result);
+}
+```
+

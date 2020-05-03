@@ -6,7 +6,7 @@ Numbers, in general, can be divided into two types: Integer type and floating-po
 
 **Floating-point type** is numbers with one or more decimal points. It can be negative or positive numbers.
 
-![](../../.gitbook/assets/image%20%287%29.png)
+![](../../.gitbook/assets/image%20%288%29.png)
 
 ## Integral Types
 
@@ -14,13 +14,13 @@ sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), l
 
 For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
 
-![integral types](../../.gitbook/assets/image%20%2822%29.png)
+![integral types](../../.gitbook/assets/image%20%2823%29.png)
 
  Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
 
 ## Number Types with floating point
 
-![Number types](../../.gitbook/assets/image%20%2810%29.png)
+![Number types](../../.gitbook/assets/image%20%2811%29.png)
 
 
 
