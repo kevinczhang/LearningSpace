@@ -20,12 +20,6 @@ The following is an implicit data types conversion table.
 | char | ushort, int, uint, long, ulong, float, double, or decimal |
 | float | Double |
 
-Difference between Parse and TryParse 
-
-1. If the number is in a string format you have 2 options - Parse\(\) and TryParse\(\)
-2. Parse\(\) method throws an exception if it cannot parse the value, whereas TryParse\(\) returns a bool indicating whether it succeeded or failed.
-3. Use Parse\(\) if you are sure the value will be valid, otherwise use TryParse\(\)
-
 ## Boxing
 
 While working with these data types, you often need to convert value types to reference types or vice-versa.These conversion processes are called boxing and unboxing.
@@ -57,4 +51,53 @@ Casting is when you convert a basic type to another basic type \(like from an in
 Casting is taking a type \(say, System.Object\) and treating it as another type \(say, System.String\). When you box something in C\#, you are casting it to another type. The difference is that it allocates additional memory as a new reference type is created.
 
 Bottom line: boxing is a special kind of cast that converts a value type to a reference type, which requires the allocation of a new reference type.
+
+### Convert string to int
+
+1. Parse\(\) method
+2. Convert class
+3. TryParse\(\) method - Recommended
+
+```csharp
+Int16.Parse("100"); // returns 100
+Int16.Parse("(100)", NumberStyles.AllowParentheses); // returns -100
+
+int.Parse("30,000", NumberStyles.AllowThousands, new CultureInfo("en-au"));// returns 30000
+int.Parse("$ 10000", NumberStyles.AllowCurrencySymbol); //returns 100
+int.Parse("-100", NumberStyles.AllowLeadingSign); // returns -100
+int.Parse(" 100 ", NumberStyles.AllowLeadingWhite | NumberStyles.AllowTrailingWhite); // returns 100
+
+Int64.Parse("2147483649"); // returns 2147483649
+
+Convert.ToInt16("100"); // returns short
+Convert.ToInt16(null);//returns 0
+
+Convert.ToInt32("233300");// returns int
+Convert.ToInt32("1234",16); // returns 4660 - Hexadecimal of 1234
+
+Convert.ToInt64("1003232131321321");//returns long
+
+// the following throw exceptions
+Convert.ToInt16("");//throws FormatException
+Convert.ToInt32("30,000"); //throws FormatException
+Convert.ToInt16("(100)");//throws FormatException
+Convert.ToInt16("100a"); //throws FormatException
+Convert.ToInt16(2147483649);//throws OverflowException
+
+string numberStr = "123456";
+int number;
+
+bool isParsable = Int32.TryParse(numberStr, out number);
+
+if (isParsable)
+    Console.WriteLine(number);
+else
+    Console.WriteLine("Could not be parsed.");
+```
+
+Difference between Parse and TryParse 
+
+1. If the number is in a string format you have 2 options - Parse\(\) and TryParse\(\)
+2. Parse\(\) method throws an exception if it cannot parse the value, whereas TryParse\(\) returns a bool indicating whether it succeeded or failed.
+3. Use Parse\(\) if you are sure the value will be valid, otherwise use TryParse\(\).
 
