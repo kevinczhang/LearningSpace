@@ -1,8 +1,12 @@
+---
+description: >-
+  An enum is a value type with a set of related named constants often referred
+  to as an enumerator list.
+---
+
 # Enum
 
-An enum is a value type with a set of related named constants often referred to as an enumerator list. The enum keyword is used to declare an enumeration. It is a primitive data type, which is user defined.
-
-An enum type can be an integer \(float, int, byte, double etc.\). But if you used beside int it has to be cast.
+The enum keyword is used to declare an enumeration. It is a primitive data type, which is user defined. An enum type can be an integer \(float, int, byte, double etc.\). But if you used beside int it has to be cast.
 
 An enum is used to create numeric constants in .NET framework. All the members of enum are of enum type. Their must be a numeric value for each enum type.
 
