@@ -30,6 +30,8 @@ Wrapper classes are of two types:
 
 ## const V.S. readonly
 
+ The `readonly` keyword is used to declare a member variable a constant, but allows the value to be calculated at runtime. This differs from a constant declared with the `const` modifier, which must have its value set at compile time
+
 | READONLY KEYWORD | CONST KEYWORD |
 | :--- | :--- |
 | In C\#, readonly fields can be created using readonly keyword | In C\#, constant fields are created using const keyword. |
