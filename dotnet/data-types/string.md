@@ -1,52 +1,4 @@
----
-description: >-
-  For different data types, a certain amount of memory space is reserved on our
-  computer.
----
-
-# Data Types
-
-Data types that represent the whole numbers are expressed with a certain number of bits. 
-
-## Boolean type 
-
-* value type
-* true or false \(default: false\)
-* 8 bits
-
-Examples:
-
-```csharp
-bool a = true;
-```
-
-## Integral Types
-
-sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), long \(64\), ulong \(64\)
-
-For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
-
-![integral types](../.gitbook/assets/image%20%2818%29.png)
-
- Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
-
-## Number Types with floating point
-
-![Number types](../.gitbook/assets/image%20%287%29.png)
-
-
-
-## char Type
-
-* 16 bits
-
-Examples:
-
-```csharp
-char a = 'a';
-```
-
-## String Type  
+# String
 
 A string is an object of type [String](https://docs.microsoft.com/en-us/dotnet/api/system.string) whose value is text. Internally, the text is stored as a sequential read-only collection of [Char](https://docs.microsoft.com/en-us/dotnet/api/system.char) objects.  In C\#, the `string` keyword is an alias for [String](https://docs.microsoft.com/en-us/dotnet/api/system.string). Therefore, `String` and `string` are equivalent.
 
@@ -131,24 +83,5 @@ else
   Console.WriteLine("number3 is not a valid decimal");
 ```
 
-## Nullable
 
-### By default value types are non nullable. To make them nullable use ? 
-
-int i = 0 \(i is non nullable, so "i" cannot be set to null, i = null will generate compiler error\) int? j = 0 \(j is nullable int, so j=null is legal\)
-
-### int AvailableTickets; int? TicketsOnSale = null;
-
-//Using null coalesce operator ?? AvailableTickets = TicketsOnSale ?? 0;
-
-## Operators
-
-![](../.gitbook/assets/image%20%284%29.png)
-
- Assignment Operator **=**  
-Arithmetic Operators like **+,-,\*,/,%**   
-Comparison Operators like **==, !=,&gt;, &gt;=, &lt;, &lt;=**   
-Conditional Operators like **&&, \|\|**  
-Ternary Operator **?:**  
-Null Coalescing Operator **??** 
 
