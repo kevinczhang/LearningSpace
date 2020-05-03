@@ -6,7 +6,7 @@
     * [Covariance and Contravariance](dotnet/programming-concepts/covariance-and-contravariance.md)
   * [Data Types](dotnet/data-types/README.md)
     * [String](dotnet/data-types/string.md)
-  * [Type conversion](dotnet/type-conversion.md)
+    * [Type conversion](dotnet/data-types/type-conversion.md)
   * [Methods](dotnet/methods/README.md)
     * [Delegates](dotnet/methods/delegates.md)
   * [Enum](dotnet/enum.md)
