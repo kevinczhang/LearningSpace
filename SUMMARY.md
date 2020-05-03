@@ -2,8 +2,10 @@
 
 * [Introduction](README.md)
 * [Basics](dotnet/README.md)
+  * [Programming Concepts](dotnet/programming-concepts.md)
   * [Data Types](dotnet/data-types.md)
   * [Type conversion](dotnet/type-conversion.md)
+  * [Methods](dotnet/methods.md)
   * [Enum](dotnet/enum.md)
 * [LINQ](linq/README.md)
   * [Data Transformations](linq/data-transformations.md)
