@@ -6,7 +6,7 @@ description: 'This section explains programming concepts in the C# language.'
 
 ## Covariance and Contravariance <a id="covariance-and-contravariance-c"></a>
 
-In C\#, covariance and contravariance enable implicit reference conversion for array types, delegate types, and generic type arguments. Covariance preserves assignment compatibility and contravariance reverses it.
+In C\#, covariance and contravariance enable implicit reference conversion for array types, delegate types, and generic type arguments. Covariance preserves assignment compatibility and contravariance reverses it. Covariance and contravariance allow us to be flexible when dealing with class hierarchy.
 
 ```csharp
 // Assignment compatibility.
