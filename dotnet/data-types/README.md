@@ -12,7 +12,7 @@ C\# 3.0 introduced the implicit typed local variable "var". Var can only be defi
 
 C\# mainly categorized data types in two types: **Value types** and **Reference types**. Value types include simple types \(e.g. int, float, bool, and char\), enum types, struct types, and Nullable value types. Reference types include class types, interface types, delegate types, and array types.
 
-![](../../.gitbook/assets/image%20%2820%29.png)
+![](../../.gitbook/assets/image%20%2821%29.png)
 
 ## Predefined Data Types
 
@@ -50,22 +50,6 @@ Examples:
 ```csharp
 bool a = true;
 ```
-
-## Integral Types
-
-sbyte \(8\), byte \(8\), short \(16\), ushort \(16\), int \(32\), uint \(32\), long \(64\), ulong \(64\)
-
-For unsigned numbers, the range is from 0 to 2N-1, and signed numbers range is from -2N-1 to 2N-1-1.
-
-![integral types](../../.gitbook/assets/image%20%2821%29.png)
-
- Letter `u` in front of the type means that type can’t contain negative numbers, it is unsigned.
-
-## Number Types with floating point
-
-![Number types](../../.gitbook/assets/image%20%289%29.png)
-
-
 
 ## char Type
 
