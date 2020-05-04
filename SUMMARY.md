@@ -16,6 +16,7 @@
     * [Stack and Queue](dotnet/collections/stack-and-queue.md)
     * [Hashtable and Dictionary](dotnet/collections/hashtable-and-dictionary.md)
     * [SortedList](dotnet/collections/sortedlist.md)
+    * [ArrayList and List&lt;T&gt;](dotnet/collections/arraylist-and-list-less-than-t-greater-than.md)
   * [Object-Oriented programming](dotnet/object-oriented-programming/README.md)
     * [Indexers](dotnet/object-oriented-programming/indexers.md)
 * [LINQ](linq/README.md)
