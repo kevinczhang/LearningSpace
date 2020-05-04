@@ -11,6 +11,7 @@
     * [Enum](dotnet/data-types/enum.md)
   * [Methods](dotnet/methods/README.md)
     * [Delegates](dotnet/methods/delegates.md)
+    * [Extension Method](dotnet/methods/extension-method.md)
 * [LINQ](linq/README.md)
   * [Data Transformations](linq/data-transformations.md)
   * [Query Syntax and Method Syntax](linq/query-syntax-and-method-syntax.md)
