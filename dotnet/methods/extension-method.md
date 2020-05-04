@@ -30,7 +30,7 @@ using System;
 
 namespace ExtensionMethod { 
 
-	// This class contains M4 and M5 method Which we want to add in Geek class. 
+	// This class contains M4 method which we want to add in Geek class. 
 	// NewMethodClass is a static class 
 	static class NewMethodClass {
 		public static void M4(this Geek g) 
