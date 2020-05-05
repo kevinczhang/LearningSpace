@@ -22,6 +22,7 @@
     * [Indexers](dotnet/object-oriented-programming/indexers.md)
     * [Inheritance](dotnet/object-oriented-programming/inheritance.md)
     * [Polymorphism](dotnet/object-oriented-programming/polymorphism.md)
+  * [Exception](dotnet/exception.md)
 * [LINQ](linq/README.md)
   * [Data Transformations](linq/data-transformations.md)
   * [Query Syntax and Method Syntax](linq/query-syntax-and-method-syntax.md)

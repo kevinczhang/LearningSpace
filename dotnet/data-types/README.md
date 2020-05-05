@@ -12,7 +12,7 @@ C\# 3.0 introduced the implicit typed local variable "var". Var can only be defi
 
 C\# mainly categorized data types in two types: **Value types** and **Reference types**. Value types include simple types \(e.g. int, float, bool, and char\), enum types, struct types, and Nullable value types. Reference types include class types, interface types, delegate types, and array types.
 
-![](../../.gitbook/assets/image%20%2823%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 ## Predefined Data Types
 
