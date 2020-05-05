@@ -83,5 +83,17 @@ else
   Console.WriteLine("number3 is not a valid decimal");
 ```
 
+## StringBuilder
 
+StringBuilder is a dynamic object that allows you to expand the number of characters in the string. It doesn't create a new object in the memory but dynamically expands memory to accommodate the modified string.
+
+### Important Methods of StringBuilder
+
+| Method Name | Description |
+| :--- | :--- |
+| [StringBuilder.Append\(valueToAppend\)](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder#append) | Appends the passed values to the end of the current StringBuilder object. |
+| [StringBuilder.AppendFormat\(\)](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder#appendformat) | Replaces a format specifier passed in a string with formatted text. |
+| [StringBuilder.Insert\(index, valueToAppend\)](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder#insert) | Inserts a string at the specified index of the current StringBuilder object. |
+| [StringBuilder.Remove\(int startIndex, int length\)](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder#remove) | Removes the specified number of characters from the given starting position of the current StringBuilder object. |
+| [StringBuilder.Replace\(oldValue, newValue\)](https://www.tutorialsteacher.com/csharp/csharp-stringbuilder#replace) | Replaces characters with new characters. |
 
