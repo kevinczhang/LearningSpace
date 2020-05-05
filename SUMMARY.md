@@ -18,6 +18,7 @@
     * [SortedList](dotnet/collections/sortedlist.md)
     * [ArrayList and List&lt;T&gt;](dotnet/collections/arraylist-and-list-less-than-t-greater-than.md)
   * [Object-Oriented programming](dotnet/object-oriented-programming/README.md)
+    * [Events](dotnet/object-oriented-programming/events.md)
     * [Indexers](dotnet/object-oriented-programming/indexers.md)
     * [Inheritance](dotnet/object-oriented-programming/inheritance.md)
     * [Polymorphism](dotnet/object-oriented-programming/polymorphism.md)
