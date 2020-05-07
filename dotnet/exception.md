@@ -1,3 +1,9 @@
+---
+description: >-
+  The C# language's exception handling features help you deal with any
+  unexpected or exceptional situations that occur when a program is running.
+---
+
 # Exception
 
  There are two main classes for exceptions - **SystemException** and **ApplicationException:**
