@@ -10,7 +10,7 @@ You can write LINQ queries in C\# for SQL Server databases, XML documents, ADO.N
 
 For a developer who writes queries, the most visible "language-integrated" part of LINQ is the query expression. Query expressions are written in a declarative _query syntax_. By using query syntax, you can perform filtering, ordering, and grouping operations on data sources with a minimum of code. 
 
-![LINQ Usage](../.gitbook/assets/image%20%287%29.png)
+![LINQ Usage](../.gitbook/assets/image%20%288%29.png)
 
 ## Query expression overview
 

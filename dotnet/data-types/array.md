@@ -42,7 +42,7 @@ int[, , ,] arr4d ; // four-dimensional array
 int[, , , ,] arr5d; // five-dimensional array
 ```
 
-![](../../.gitbook/assets/image%20%2822%29.png)
+![](../../.gitbook/assets/image%20%2824%29.png)
 
 ## Jagged Arrays
 

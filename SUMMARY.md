@@ -29,4 +29,6 @@
   * [Data Transformations](linq/data-transformations.md)
   * [Query Syntax and Method Syntax](linq/query-syntax-and-method-syntax.md)
   * [Standard Query Operators](linq/standard-query-operators.md)
+  * [Expression in LINQ](linq/expression-in-linq/README.md)
+    * [Expression Tree](linq/expression-in-linq/expression-tree.md)
 
