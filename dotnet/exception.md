@@ -11,7 +11,7 @@ description: >-
 * SystemException is a base class for all CLR generated errors.
 * ApplicationException serves as a base class for all application related exceptions, which you want to raise on business rule violation.
 
-![](../.gitbook/assets/image%20%2821%29.png)
+![](../.gitbook/assets/image%20%2822%29.png)
 
 ### Important Exception Classes:
 
